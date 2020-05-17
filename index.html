@@ -19,39 +19,41 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <nav>
-        <a lang="en" href="./index.html" class="logo link">
-          Web <span class="logo-part">Studio</span></a
-        >
-        <ul class="site-nav list">
-          <li class="nav-item">
-            <a href="./index.html" class="link nav-item thisone">Студия</a>
-          </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="link nav-item">Портфолио</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="link nav-item">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+<div class="conteiner">
+  <nav>
+    <a lang="en" href="./index.html" class="logo link">
+      Web <span class="logo-part">Studio</span></a
+    >
+    <ul class="site-nav list">
+      <li class="nav-item">
+        <a href="./index.html" class="link nav-item thisone">Студия</a>
+      </li>
+      <li class="nav-item">
+        <a href="./portfolio.html" class="link nav-item">Портфолио</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="link nav-item">Контакты</a>
+      </li>
+    </ul>
+  </nav>
 
-      <ul lang="en" class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-item link">
-            <img src="./img/envelope.svg" alt="envelope icon" />
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-item link">
-            <img src="./img/smartphone.svg" alt="smartphone icon" />
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </header>
+  <ul lang="en" class="contacts list">
+    <li>
+      <a href="mailto:info@devstudio.com" class="contact-item link">
+        <img src="./img/envelope.svg" alt="envelope icon" />
+        info@devstudio.com</a
+      >
+    </li>
+    <li>
+      <a href="tel:+380961111111" class="contact-item link">
+        <img src="./img/smartphone.svg" alt="smartphone icon" />
+        +38 096 111 11 11
+      </a>
+    </li>
+  </ul>
+  </div>    
+</header>
 
     <main>
       <section class="hero">
@@ -64,12 +66,14 @@
       </section>
 
       <!-- Секция1 Особенности компании -->
-      <section class="features">
+      <section class="features ">
+        <div class="conteiner">
+          
         <h2 class="invisible-title">Особенности компании</h2>
         <!-- потом нужно скрить заголовок секции   -->
         <ul class="features-list list">
           <li>
-            <a href="" aria-label="Антена"> svg antenna 1 </a>
+            <a href="" aria-label="Антена"> <img src="./img/RectangleIcon.svg" alt="svg antenna 1"> </a>
             <h3 class="features-titele">Внимание к деталям</h3>
             <p class="feature-text">
               Идейные соображения, а также начало повседневной работы по
@@ -78,7 +82,7 @@
           </li>
 
           <li>
-            <a href="" aria-label="Часы"> svg clock 1 </a>
+            <a href="" aria-label="Часы"> <img src="./img/RectangleIcon.svg" alt="svg clock 1">  </a>
             <h3 class="features-titele">Пунктуальность</h3>
             <p class="feature-text">
               Идейные соображения, а также начало повседневной работы по
@@ -87,7 +91,7 @@
           </li>
 
           <li>
-            <a href="" aria-label="Диаграмма"> svg diagram 1 </a>
+            <a href="" aria-label="Диаграмма"> <img src="./img/RectangleIcon.svg" alt=" svg diagram 1">  </a>
             <h3 class="features-titele">Планирование</h3>
             <p class="feature-text">
               Идейные соображения, а также начало повседневной работы по
@@ -96,7 +100,7 @@
           </li>
 
           <li>
-            <a href="" aria-label="Космонавт"> svg astronaut 1 </a>
+            <a href="" aria-label="Космонавт"> <img src="./img/RectangleIcon.svg" alt=" svg astronaut 1">  </a>
             <h3 class="features-titele">Современные технологии</h3>
             <p class="feature-text">
               Идейные соображения, а также начало повседневной работы по
@@ -104,11 +108,17 @@
             </p>
           </li>
         </ul>
+        
+
+        </div>
+
       </section>
 
       <!-- Секция 2 - Чем мы занимаемся -->
 
       <section class="solutions">
+        <div class="conteiner">
+        
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list">
           <li class="item">
@@ -142,11 +152,16 @@
             </a>
           </li>
         </ul>
+
+        </div>
+
       </section>
 
       <!-- Секция 3 Наша команда  КАРТОЧКИ  -->
 
       <section class="team">
+        <div class="conteiner">
+
         <h2 class="section-title">Наша команда</h2>
         <ul lang="en" class="list">
           <li>
@@ -158,7 +173,7 @@
             />
             <h3 class="name">John Smith</h3>
             <p class="position">Product Designer</p>
-            <ul>
+            <ul class="list">
               <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
               <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
               <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
@@ -217,10 +232,12 @@
             </ul>
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- Секция 4 Постоянные клиенты   -->
       <section class="clients">
+        <div class="conteiner">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="list">
           <li>
@@ -254,12 +271,14 @@
             /></a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
     <!--  ПОДВАЛ  -->
 
     <footer class="footer">
+      <div class="conteiner">
       <a lang="en" href="./index.html" class="link logo">
         Web <span class="logo-white">Studio</span></a
       >
@@ -294,6 +313,7 @@
       <!-- поле для ввода и кнопка, пока не трогаем до 3го занятья -->
 
       <p lang="en" class="about">2020 | Developed by GoIT Students</p>
+    </div>
     </footer>
   </body>
 </html>
