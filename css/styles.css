@@ -239,13 +239,15 @@ body {
   margin-bottom: 0;
   padding: 27px 87px;
   border-radius: 0px 0px 4px 4px;
+  height: 70px;
 
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.142857142857;
+  /* line-height: 16px; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -268,12 +270,16 @@ body {
 
 .team img {
   margin-bottom: 30px;
+}
+
+.social-links img {
+  margin-bottom: 24px;
   display: block;
+  padding: 12px;
 }
 
 .team .list {
   display: flex;
-  margin-bottom: 24px;
 }
 
 .team .card {
