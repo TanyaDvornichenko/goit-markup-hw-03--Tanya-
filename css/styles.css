@@ -335,6 +335,7 @@ body {
 .footer-flex {
   display: flex;
   align-items: flex-start;
+  /* align-items:baseline; Может лучше этот ? */
   margin-bottom: 46px;
 }
 
