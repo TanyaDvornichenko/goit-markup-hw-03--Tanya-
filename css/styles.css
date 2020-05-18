@@ -30,7 +30,7 @@ body {
 }
 
 .conteiner {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -358,8 +358,7 @@ body {
 
 .footer-flex {
   display: flex;
-  align-items: flex-start;
-  /* align-items:baseline; Может лучше этот ? */
+  align-items: baseline;
   margin-bottom: 46px;
 }
 
@@ -412,7 +411,7 @@ body {
 
 .footer .exclamation {
   margin-top: 48px;
-  margin-bottom: 0;
+  margin-bottom: 21px;
 
   color: var(--white-color);
 
@@ -525,7 +524,7 @@ button {
 .gallery-conteiner {
   margin-bottom: 94px;
 
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -545,6 +544,7 @@ button {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
