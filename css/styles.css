@@ -481,6 +481,10 @@ button {
   line-height: 1.56;
 }
 
+.gallery img {
+  border-radius: 5px 5px 0px 0px;
+}
+
 .gallery-conteiner {
   margin-bottom: 94px;
 
@@ -500,6 +504,10 @@ button {
 .flex-elemet {
   width: 380px;
   margin: 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
