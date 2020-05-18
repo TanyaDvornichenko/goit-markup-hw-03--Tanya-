@@ -21,18 +21,18 @@ body {
 
 .list {
   list-style: none;
-padding: 0;
-margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+}
 
 .header {
-  background-color: #ECECEC;
+  background-color: #ececec;
 }
 
 .conteiner {
-width: 1230px;
-padding-left: 15px;
-padding-right: 15px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* logo */
@@ -52,15 +52,29 @@ padding-right: 15px;
 }
 
 /* Новигация  */
+
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav .nav-item {
   color: var(--basic-color);
-
   /* дает ссылкам  новигации цвет принудительно  */
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .nav-item:hover,
@@ -72,8 +86,10 @@ padding-right: 15px;
   color: var(--accent-color);
 }
 
-.site-nav > link {
-  text-decoration: none;
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .contacts .contact-item {
@@ -89,6 +105,14 @@ padding-right: 15px;
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .contacts link {
   text-decoration: none;
 }
@@ -97,24 +121,21 @@ padding-right: 15px;
 .hero {
   background-color: rgba(50, 50, 50, 50);
   text-align: center;
-  }
+}
 
 .hero-title {
   margin-top: 0;
   padding-top: 200px;
   margin-bottom: 46px;
 
-
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
-    text-transform: uppercase;
-
- }
+  text-transform: uppercase;
+}
 
 .order-button {
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
@@ -142,17 +163,29 @@ padding-right: 15px;
 .features {
   padding-top: 94px;
 }
+.features-item {
+  outline: 3px solid cornflowerblue;
+  width: 1201px;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+
 .invisible-title {
   color: transparent;
   margin: 0;
   padding: 0;
   font-size: 0px;
+}
+.features img {
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
 
-  }
-  .features img {
-    padding-bottom: 0;
-    margin-bottom: 30px;
-  }
+.features-list {
+  display: flex;
+}
 
 .features-list .features-titele {
   margin-top: 0;
@@ -167,7 +200,7 @@ padding-right: 15px;
 .features .feature-text {
   color: var(--paragr-gris-color);
   margin-top: 0;
-  }
+}
 
 .section-title {
   margin-top: 0;
@@ -181,18 +214,31 @@ padding-right: 15px;
 }
 
 /* Секция 2 - Чем мы занимаемся  */
-.solutions { 
+.solutions {
   padding-top: 94px;
   padding-bottom: 94px;
- }
+}
 
-/* .solutions .item {
-     } */
+.solutions .list {
+  display: flex;
+}
+
+.solutions .item {
+  width: 380px;
+}
+
+.solutions .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .solutions-title {
-  /* display: inline-block; */
-  
+  display: block;
+  text-decoration: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 27px 87px;
+  border-radius: 0px 0px 4px 4px;
 
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
@@ -206,26 +252,31 @@ padding-right: 15px;
 
 .solutions img {
   border-radius: 4px;
-
 }
 
 /* Секция 3 Наша команда  КАРТОЧКИ */
-
 
 .team {
   background: #f5f4fa;
 }
 
 .team .conteiner {
-padding-top: 94px;
-padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team img {
   margin-bottom: 30px;
 }
 
-.team ul {margin-bottom: 24px;}
+.team .list {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.team .card:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team .section-title {
   /* margin-top: 94px; */
@@ -254,12 +305,19 @@ padding-bottom: 94px;
 
 .clients {
   padding-top: 94px;
-  padding-bottom: 94px; 
-
+  padding-bottom: 94px;
+}
+.clients .list {
+  display: flex;
+  align-items: center;
 }
 
 .clients li {
   display: inline-block;
+}
+
+.clients li + li {
+  margin-left: 30px;
 }
 
 /*   ПОДВАЛ  */
@@ -267,7 +325,6 @@ padding-bottom: 94px;
 .footer {
   background: #2f303a;
 }
-
 
 .footer .logo {
   margin-bottom: 10px;
@@ -348,14 +405,12 @@ padding-bottom: 94px;
 .filter {
   margin-top: 93px;
   margin-bottom: 50px;
-
 }
-
 
 .button-pf {
   /* display: inline; */
   /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1); */
-  
+
   margin-top: 8px;
   padding: 6px 22px;
   background-color: #f5f4fa;
@@ -399,11 +454,11 @@ button {
 
 .gallery {
   margin-bottom: 94px;
-  }
+}
 
-  .gallery img {
-    margin-bottom: 20px;
-  }
+.gallery img {
+  margin-bottom: 20px;
+}
 
 .gallery h2 {
   margin-top: 0;
