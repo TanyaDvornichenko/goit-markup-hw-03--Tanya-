@@ -436,8 +436,17 @@ body {
   margin-bottom: 50px;
 }
 
+.filter .list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter li + li {
+  margin-left: 8px;
+}
+
 .button-pf {
-  display: inline;
+  display: block;
 
   margin-top: 8px;
   padding: 6px 22px;
