@@ -61,7 +61,7 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 80px;
+  margin-left: 85px;
 }
 
 .main-nav {
@@ -114,6 +114,9 @@ img {
 .contacts {
   display: flex;
   margin-left: auto;
+}
+.contacts img {
+  display: inline;
 }
 .contacts li:not(:last-child) {
   margin-right: 30px;
@@ -529,8 +532,9 @@ button {
 
 .gallery-conteiner {
   margin-bottom: 94px;
-
   width: 1200px;
+  /* background-color: indianred; */
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -543,19 +547,26 @@ button {
   /* margin: -15px; */
 }
 
-.flex-elemet {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+.gallery-conteiner .flex-element {
+  width: 370px;
   margin-bottom: 30px;
+  margin-right: 30px;
 
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  outline: 1px solid gray;
   box-sizing: border-box;
   border-radius: 5px;
   overflow: hidden;
 }
 
+.gallery-conteiner .flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
+
+/* width: calc((100% - 20px) / 3); */
+/* width: 30%; */
 
 /* 
 .flex-element:nth-child(3n) {
