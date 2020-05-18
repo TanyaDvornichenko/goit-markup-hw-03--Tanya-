@@ -86,6 +86,7 @@ img {
 .site-nav .nav-item:hover,
 .site-nav .nav-item:focus {
   color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .site-nav .thisone {
@@ -171,6 +172,11 @@ img {
 
 .features {
   padding-top: 94px;
+}
+
+.features .features-list {
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ececec;
 }
 
 .features-item {
@@ -368,7 +374,9 @@ img {
 .footer-flex {
   display: flex;
   align-items: baseline;
-  margin-bottom: 46px;
+  padding-bottom: 28px;
+  /* background-color: lawngreen; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-flex .follow {
@@ -442,16 +450,12 @@ img {
 
 .about {
   padding-bottom: 21px;
-  margin-top: 0;
+  margin-top: 18px;
   margin-bottom: 0;
 
-  color: rgba(255, 255, 255, 0.4);
   text-align: center;
-  font-size: 12px;
+  font-style: 12px;
   line-height: 2;
-
-  text-align: center;
-  letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.4);
 }
@@ -533,7 +537,6 @@ button {
 .gallery-conteiner {
   margin-bottom: 94px;
   width: 1200px;
-  /* background-color: indianred; */
 
   padding-left: 15px;
   padding-right: 15px;
@@ -544,7 +547,6 @@ button {
 .flex-gallery {
   display: flex;
   flex-wrap: wrap;
-  /* margin: -15px; */
 }
 
 .gallery-conteiner .flex-element {
@@ -553,10 +555,11 @@ button {
   margin-right: 30px;
 
   background: #ffffff;
-  outline: 1px solid gray;
+  /* outline: 1px solid gray; */
   box-sizing: border-box;
   border-radius: 5px;
   overflow: hidden;
+  border: 1px solid #eeeeee;
 }
 
 .gallery-conteiner .flex-element:nth-child(3n) {
