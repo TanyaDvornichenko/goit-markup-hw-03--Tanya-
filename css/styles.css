@@ -276,6 +276,13 @@ body {
   margin-bottom: 24px;
 }
 
+.team .card {
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .team .card:not(:last-child) {
   margin-right: 30px;
 }
@@ -292,6 +299,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team .position {
@@ -301,6 +309,16 @@ body {
   color: var(--paragr-gris-color);
   font-size: 16px;
   line-height: 19px;
+  text-align: center;
+}
+
+.social-links img {
+  display: block;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Секция 4 Постоянные клиенты */
