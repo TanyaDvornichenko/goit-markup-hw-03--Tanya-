@@ -252,7 +252,9 @@ img {
 
   margin-top: 0;
   margin-bottom: 0;
-  padding: 27px 87px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   border-radius: 0px 0px 4px 4px;
   height: 70px;
 
