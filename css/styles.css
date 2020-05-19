@@ -285,8 +285,9 @@ img {
   padding-bottom: 94px;
 }
 
-.team img {
+.team .foto {
   margin-bottom: 30px;
+  height: 260px;
 }
 
 .social-links img {
