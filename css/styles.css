@@ -463,13 +463,27 @@ img {
   display: flex;
 }
 
-.footer-social {
+.footer-social-list img {
+  display: block;
+}
+
+.footer-social.link {
   background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
+
+.footer-social {
+  margin-right: 10px;
+}
+
+/* 
+.footer-social.link:hover,
+.footer-social.link:focus {
+  background-color: var(--accent-color);
+} */
 
 .about {
   width: 1170px;
@@ -482,15 +496,6 @@ img {
   line-height: 2;
 
   color: rgba(255, 255, 255, 0.4);
-}
-
-.footer-socia img {
-  display: block;
-}
-
-.footer-social .link:hover,
-.footer-social .link:focus {
-  background-color: var(--accent-color);
 }
 
 /* ----- СТРАНИЧКА 2_ портфолио-------  */
