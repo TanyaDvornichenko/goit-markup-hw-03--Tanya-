@@ -295,14 +295,11 @@ img {
 
 .team {
   background: #f5f4fa;
-}
-
-.team .conteiner {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team .foto {
+.team-foto {
   margin-bottom: 30px;
   height: 260px;
 }
@@ -364,25 +361,26 @@ img {
 
 /* Секция 4 Постоянные клиенты */
 
-.clients {
+.customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients .list {
+.customers .list {
   display: flex;
   align-items: center;
 }
 
-.clients li {
+.customers li {
   display: inline-block;
 }
 
-.clients li + li {
+.customers li + li {
   margin-left: 30px;
 }
 
-.clients img {
+.customers img {
   display: block;
+  height: 90px;
 }
 /*   ПОДВАЛ  */
 
@@ -398,20 +396,20 @@ img {
   /* background-color: lawngreen; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-left: 0;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
-.footer-flex .follow {
-  margin-left: 179px;
+.footer-elemet.contact {
+  width: 231px;
 }
 
-.footer-flex .subscribe {
-  margin-left: 100px;
+.footer-elemet.follow {
+  margin-left: 69px;
 }
 
-/* .footer-elemet {
-  outline: 1px solid cornflowerblue;
-} */
+.footer-elemet.subscribe {
+  margin-left: 93px;
+}
 
 .footer .logo {
   display: block;
@@ -461,13 +459,16 @@ img {
   text-transform: uppercase;
 }
 
-.footer-links .link {
-  color: var(--paragr-gris-color);
-  text-decoration: none;
+.footer-social-list {
+  display: flex;
+}
 
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
+.footer-social {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
 }
 
 .about {
@@ -483,9 +484,13 @@ img {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.footer-links .link:hover,
-.footer-links .link:focus {
-  color: var(--accent-color);
+.footer-socia img {
+  display: block;
+}
+
+.footer-social .link:hover,
+.footer-social .link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ----- СТРАНИЧКА 2_ портфолио-------  */
