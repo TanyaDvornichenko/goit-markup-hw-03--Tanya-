@@ -133,11 +133,14 @@ img {
   background-color: rgba(50, 50, 50, 50);
   text-align: center;
 }
+.hero > .conteiner {
+  padding-top: 200px;
+}
 
 .hero-title {
   margin-top: 0;
-  padding-top: 200px;
-  margin-bottom: 40px;
+
+  margin-bottom: 38px;
   /* margin-bottom: 46px; */
 
   color: var(--white-color);
@@ -174,9 +177,6 @@ img {
 
 .features {
   padding-top: 94px;
-}
-
-.features .features-list {
   padding-bottom: 94px;
   border-bottom: 1px solid #ececec;
 }
@@ -214,6 +214,7 @@ img {
 .features .feature-text {
   color: var(--paragr-gris-color);
   margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .section-title {
